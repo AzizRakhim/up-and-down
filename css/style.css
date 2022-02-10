@@ -393,6 +393,7 @@ body {
 
 .background{
     position: relative;
+    margin-bottom: 34px;
 }
 
 .background__title{
@@ -457,6 +458,61 @@ body {
 
 .bg-content__item:first-child{
     margin-bottom: 32px;
+}
+
+/* BACKGROUND END */
+/* CAROUSEL START */
+
+#carousel{
+    margin-bottom: 80px;
+}
+
+.carousel__left,
+.carousel__right{
+    padding: 32px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.carousel__left{
+    border-right: 1px solid #000;
+}
+
+.carousel__right{
+    display: flex;
+    justify-content: end;
+}
+
+.carousel__icon-box{
+    margin-right: 32px;
+}
+
+.carousel__right .carousel__icon-box{
+    margin-right: 0;
+    margin-left: 32px;
+}
+
+.carousel__title{
+    font-family: 'Ibarra Real Nova';
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.285714px;
+    color: #33323d;
+    margin-bottom: 0;
+}
+
+.carousel__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323d;
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+
+.carousel__icon-box .bx{
+    font-size: 32px;
 }
 
 /* RESPONSIVE START */
@@ -810,5 +866,28 @@ body {
 
     .background__text{
         position: static !important;
+    }
+
+    /* BACKGROUND END */
+    /* CAROUSEL START */
+
+    .carousel__left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .carousel__right{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+
+    .carousel__right .carousel__title{
+        text-align: right;
+    }
+
+    .carousel__right .carousel__text{
+        text-align: right;
     }
 }
