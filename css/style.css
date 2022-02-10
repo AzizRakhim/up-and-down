@@ -470,14 +470,16 @@ body {
 .carousel__left,
 .carousel__right{
     padding: 32px 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #dcdcde;
+    border-bottom: 1px solid #dcdcde;
     display: flex;
     align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .carousel__left{
-    border-right: 1px solid #000;
+    border-right: 1px solid #dcdcde;
 }
 
 .carousel__right{
@@ -501,6 +503,7 @@ body {
     letter-spacing: -0.285714px;
     color: #33323d;
     margin-bottom: 0;
+    transition: all 0.4s ease;
 }
 
 .carousel__text{
@@ -509,10 +512,35 @@ body {
     color: #33323d;
     opacity: 0.5;
     margin-bottom: 0;
+    transition: all 0.4s ease;
 }
 
 .carousel__icon-box .bx{
     font-size: 32px;
+}
+
+.carousel__left:hover{
+    color: #55a292;
+}
+
+.carousel__left:hover .carousel__title{
+    color: #55a292;
+}
+
+.carousel__left:hover .carousel__text{
+    color: #55a292;
+}
+
+.carousel__right:hover{
+    color: #55a292;
+}
+
+.carousel__right:hover .carousel__title{
+    color: #55a292;
+}
+
+.carousel__right:hover .carousel__text{
+    color: #55a292;
 }
 
 /* RESPONSIVE START */
