@@ -305,6 +305,82 @@ body {
     color: #55a292;
 }
 
+/* FOOTER END */
+/* PORTFOLIO-INTRO START */
+
+.portfolio-header{
+    padding-bottom: 94px;
+}
+
+.portfolio{
+    width: 100%;
+    max-width: 1015px;
+    position: relative;
+}
+
+.portfolio:not(:last-child){
+    margin-bottom: 80px;
+}
+
+.portfolio__title{
+    font-family: 'Ibarra Real Nova';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323d;
+    margin-bottom: 28px;
+}
+
+.portfolio__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323d;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.portfolio__btn{
+    padding: 17px 36px;
+}
+
+.portfolio__content{
+    position: relative;
+    height: 100%;
+}
+
+.top-line{
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #33323d;
+    opacity: 0.15;
+    margin-bottom: 90px;
+}
+
+.bottom-line{
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #33323d;
+    opacity: 0.15;
+    margin-top: 90px;
+}
+
+.portfolio:nth-child(even){
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+
+.portfolio:nth-child(even) .portfolio__img-box{
+    display: flex;
+    justify-content: end;
+}
+
+.portfolio__wrapper{
+    margin-bottom: 150px;
+}
+
 /* RESPONSIVE START */
 
 @media screen and (max-width: 992px) {
@@ -341,6 +417,26 @@ body {
     .about__img-box{
         width: 281px;
         height: 600px;
+    }
+
+    /* ABOUT END */
+    /* PORTFOLIO START */
+
+    .portfolio__img-box img{
+        width: 339px;
+        height: 314px;
+    }
+
+    .top-line{
+        margin-bottom: 32px;
+    }
+
+    .bottom-line{
+        margin-top: 50px;
+    }
+
+    .portfolio__text{
+        font-size: 15px;
     }
 }
 
@@ -424,6 +520,33 @@ body {
     .footer__nav{
         margin-bottom: 40px;
     }
+
+    /* FOOTER END */
+    /* PORTFOLIO END */
+
+    .portfolio{
+        flex-direction: column;
+    }
+
+    .portfolio:nth-child(even){
+        flex-direction: column;
+    }
+
+    .portfolio:nth-child(even) .portfolio__img-box{
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio__img-box{
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio__content{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -505,5 +628,18 @@ body {
 
     .footer__item:not(:last-child){
         margin-bottom: 32px;
+    }
+
+    /* FOOTER END */
+    /* PORTFOLIO START */
+
+    .portfolio__img-box img{
+        width: 100%;
+        max-width: 311px;
+        height: 288px;
+    }
+
+    .portfolio__content{
+        text-align: left;
     }
 }
